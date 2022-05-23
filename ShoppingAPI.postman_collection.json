@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "e9cd8a2a-80b4-485d-9c1d-5aef3fc85d8e",
+		"name": "ShoppingAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15503982"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Viewall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/viewall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"viewall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productname\": \"Glossy Gray 19' Aluminium Wheel\",\n    \"shortdesc\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec nibh pharetra, tempus urna vitae, vulputate odio. Vestibulum sit amet consequat libero.\",\n    \"fulldesc\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec nibh pharetra, tempus urna vitae, vulputate odio. Vestibulum sit amet consequat libero. \",\n    \"maxprice\": 260,\n    \"saleprice\": 250,\n    \"brand\": \"Glossy\",\n    \"category\": \"Wheel\",\n    \"featured\": \"True\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"690a781e-da82-11ec-9d64-0242ac120002\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Viewall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/viewall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"viewall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productname\": \"Glossy Gray 19' Aluminium Wheel\",\n    \"shortdesc\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec nibh pharetra, tempus urna vitae, vulputate odio. Vestibulum sit amet consequat libero.\",\n    \"fulldesc\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec nibh pharetra, tempus urna vitae, vulputate odio. Vestibulum sit amet consequat libero. \",\n    \"maxprice\": 260,\n    \"saleprice\": 250,\n    \"brand\": \"Glossy\",\n    \"category\": \"Wheel\",\n    \"featured\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"ce339df6-da82-11ec-9d64-0242ac120002\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
